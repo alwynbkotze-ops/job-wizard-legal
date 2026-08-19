@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Job Wizard helps tradespeople manage customers, quotes, jobs, invoices and payments from one simple mobile app.">
+  <meta name="description" content="Job Wizard tracks every job from first call to paid invoice for businesses that book work and send invoices.">
   <meta name="theme-color" content="#88b5de">
-  <title>Job Wizard | Never lose a job again</title>
+  <title>Job Wizard | Every job tracked from first call to paid invoice</title>
   <style>
     :root {
       --sky: #88b5de;
@@ -85,6 +85,10 @@
     .workflow-number { width: 36px; height: 36px; display: grid; place-items: center; margin: 0 auto 13px; border-radius: 50%; color: white; background: var(--navy); font-weight: 900; }
     .workflow-card strong { display: block; font-size: 17px; }
     .workflow-card span { color: var(--muted); font-size: 14px; }
+    .workflow-note { max-width: 760px; margin: 28px auto 0; color: var(--muted); text-align: center; }
+    .audience { text-align: center; }
+    .audience-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 900px; margin: 30px auto 0; }
+    .audience-tag { padding: 10px 16px; border: 1px solid var(--line); border-radius: 999px; color: var(--navy); background: var(--white); font-size: 14px; font-weight: 800; box-shadow: 0 8px 24px rgba(20, 61, 115, .06); }
     .pricing { background: linear-gradient(140deg, #eaf5ff, #ffffff 60%, #fff7e3); }
     .plans { max-width: 880px; display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 0 auto; }
     .plan { position: relative; padding: 36px; border: 1px solid var(--line); border-radius: 28px; background: var(--white); box-shadow: var(--shadow); }
@@ -125,7 +129,7 @@
       .brand img { width: 43px; height: 43px; }
       .nav .button { display: none; }
       .hero { padding: 54px 0 66px; }
-      h1 { font-size: 48px; }
+      h1 { font-size: 42px; line-height: 1.01; }
       .hero-actions .button { width: 100%; }
       .hero-visual { min-height: 520px; }
       .brand-orbit { width: 86px; height: 86px; right: -4px; }
@@ -151,11 +155,11 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Built for tradespeople</div>
-          <h1>Never lose a <span>job</span> again.</h1>
-          <p class="lead">Manage your customers, quotes, jobs, invoices and payments from your phone. Job Wizard keeps your whole job flow in one simple place.</p>
+          <div class="eyebrow">Made for job-based businesses</div>
+          <h1>Every job, tracked from first call to <span>paid invoice.</span></h1>
+          <p class="lead">Replace scattered WhatsApp threads, notes and memory with one clear pipeline—from booking to payment. See where every job stands, what’s still owed and what’s already been paid.</p>
           <div class="hero-actions"><a class="button primary" href="#download">Start your 30-day free trial</a><a class="button secondary" href="#app">See the real app</a></div>
-          <div class="trial-note">Job Wizard Pro from R119/month after the 30-day free trial.</div>
+          <div class="trial-note">Built in South Africa · No card required for your trial · From R119/month</div>
         </div>
         <div class="hero-visual" aria-label="Job Wizard dashboard shown on a phone">
           <span class="spark one">✦</span><span class="spark two">✦</span>
@@ -167,20 +171,20 @@
     </section>
     <section class="section" id="features">
       <div class="wrap">
-        <div class="section-head"><div class="kicker">Less admin. More control.</div><h2>Your jobs shouldn’t live in five different places.</h2><p>Job Wizard gives you one practical workflow from the first customer contact to getting paid.</p></div>
+        <div class="section-head"><div class="kicker">The old way</div><h2>Stop running your business out of WhatsApp.</h2><p>When bookings, quotes, job details and payment follow-ups live in different places, work slips through the cracks. Job Wizard brings the whole job—and the money attached to it—into one clear system.</p></div>
         <div class="feature-grid">
-          <article class="feature-card"><div class="feature-icon">01</div><strong>Customers together</strong><p>Keep customer details and complete job history in one place.</p></article>
-          <article class="feature-card"><div class="feature-icon">02</div><strong>Quotes visible</strong><p>Track quotes from first issue through acceptance without losing the thread.</p></article>
-          <article class="feature-card"><div class="feature-icon">03</div><strong>Next steps clear</strong><p>See what needs attention now, rather than relying on memory.</p></article>
-          <article class="feature-card"><div class="feature-icon">04</div><strong>Scheduling built in</strong><p>Plan site visits, jobs, follow-ups and reminders from the same app.</p></article>
-          <article class="feature-card"><div class="feature-icon">05</div><strong>Invoices connected</strong><p>Keep invoicing linked to the work you have completed.</p></article>
-          <article class="feature-card"><div class="feature-icon">06</div><strong>Payments followed up</strong><p>Keep outstanding money visible so completed work gets paid.</p></article>
+          <article class="feature-card"><div class="feature-icon">R</div><strong>Financial dashboard</strong><p>See work in progress, outstanding payments, income recorded this month and your projected pipeline.</p></article>
+          <article class="feature-card"><div class="feature-icon">01</div><strong>Adjustable pipeline</strong><p>Turn workflow stages on or off so Job Wizard fits the way your business actually runs.</p></article>
+          <article class="feature-card"><div class="feature-icon">🎙</div><strong>Voice and easy notes</strong><p>Capture the important detail when your hands are full or typing is not practical.</p></article>
+          <article class="feature-card"><div class="feature-icon">↗</div><strong>Referral tracking</strong><p>Know which clients send work your way so you can thank them and encourage more referrals.</p></article>
+          <article class="feature-card"><div class="feature-icon">↻</div><strong>Follow-up booking</strong><p>Schedule service reminders, warranty checks and return visits before they are forgotten.</p></article>
+          <article class="feature-card"><div class="feature-icon">⌕</div><strong>Searchable archive</strong><p>Find completed jobs and customer history without cluttering the work that is still active.</p></article>
         </div>
       </div>
     </section>
     <section class="section lavender" id="app">
       <div class="wrap">
-        <div class="section-head"><div class="kicker">The real app</div><h2>Simple enough to use between jobs.</h2><p>A clean, light-blue interface keeps your schedule, preferences and history easy to find.</p></div>
+        <div class="section-head"><div class="kicker">The real app</div><h2>Run the whole job from your phone.</h2><p>A clean, light-blue interface keeps your schedule, next steps, preferences and history easy to find.</p></div>
         <div class="showcase">
           <article class="showcase-item"><div class="phone"><img src="assets/app-calendar.jpeg" loading="lazy" alt="Job Wizard Action TV calendar with job bookings, site visits and follow-ups"></div><h3>Plan the work</h3><p>See bookings, site visits, follow-ups and outstanding next steps on one calendar.</p></article>
           <article class="showcase-item"><div class="phone"><img src="assets/app-settings.jpeg" loading="lazy" alt="Job Wizard settings showing theme, accent colours, workflow settings and subscription"></div><h3>Make it yours</h3><p>Choose your look and switch off any workflow steps your business does not use.</p></article>
@@ -190,7 +194,7 @@
     </section>
     <section class="section soft" id="how">
       <div class="wrap">
-        <div class="section-head"><div class="kicker">One workflow</div><h2>From enquiry to paid.</h2><p>Keep every stage of the job visible and moving.</p></div>
+        <div class="section-head"><div class="kicker">Your business. Your steps.</div><h2>One clear path from enquiry to paid.</h2><p>Start with the stages that matter, then switch off anything your business does not use.</p></div>
         <div class="workflow">
           <div class="workflow-card"><div class="workflow-number">1</div><strong>Customer</strong><span>Capture the enquiry</span></div>
           <div class="workflow-card"><div class="workflow-number">2</div><strong>Quote</strong><span>Send and track it</span></div>
@@ -198,19 +202,26 @@
           <div class="workflow-card"><div class="workflow-number">4</div><strong>Invoice</strong><span>Bill for the job</span></div>
           <div class="workflow-card"><div class="workflow-number">5</div><strong>Paid</strong><span>Close the loop</span></div>
         </div>
+        <p class="workflow-note">Need site visits, materials, quality checks, service reminders or follow-ups? Keep them. Don’t need them? Turn them off. A draftsman’s workflow does not have to look like an electrician’s.</p>
+      </div>
+    </section>
+    <section class="section audience">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Who it’s for</div><h2>If you book work and send invoices, Job Wizard is for you.</h2><p>From trades and professional services to mobile and appointment-based businesses—if a job needs doing, tracking and paying, it belongs in Job Wizard.</p></div>
+        <div class="audience-list"><span class="audience-tag">Plumbers & electricians</span><span class="audience-tag">Draftsmen</span><span class="audience-tag">Mobile carwashes</span><span class="audience-tag">Puppy parlours</span><span class="audience-tag">Service providers</span><span class="audience-tag">Your business</span></div>
       </div>
     </section>
     <section class="section pricing" id="pricing">
       <div class="wrap">
-        <div class="section-head"><div class="kicker">Simple pricing</div><h2>Try it free for 30 days.</h2><p>Choose monthly flexibility or save 10% with an annual subscription.</p></div>
+        <div class="section-head"><div class="kicker">One plan. Everything included.</div><h2>Try Job Wizard free for 30 days.</h2><p>No feature tiers and no card required for your trial. Pay monthly, or save about 10% with annual billing.</p></div>
         <div class="plans">
-          <article class="plan featured"><div class="badge">Monthly</div><h3>Job Wizard Pro</h3><div class="price">R119 <small>/ month</small></div><p>After your 30-day free trial.</p><span class="check">✓ Full Job Wizard Pro access</span><span class="check">✓ Cancel anytime</span><a class="button primary" href="#download">Start free trial</a></article>
-          <article class="plan"><div class="badge">Save 10%</div><h3>Job Wizard Pro Annual</h3><div class="price">R1,285 <small>/ year</small></div><div class="saving">Save R143 per year</div><p>10% discount versus 12 monthly payments.</p><span class="check">✓ Full Job Wizard Pro access</span><span class="check">✓ One annual payment</span><a class="button primary" href="#download">Start free trial</a></article>
+          <article class="plan featured"><div class="badge">Monthly</div><h3>Job Wizard Pro</h3><div class="price">R119 <small>/ month</small></div><p>Full access after your 30-day free trial.</p><span class="check">✓ Adjustable pipeline and unlimited jobs</span><span class="check">✓ All notes, referrals and follow-up tools</span><span class="check">✓ Cancel anytime</span><a class="button primary" href="#download">Start free trial</a></article>
+          <article class="plan"><div class="badge">Save 10%</div><h3>Job Wizard Pro Annual</h3><div class="price">R1,285 <small>/ year</small></div><div class="saving">Save R143 per year</div><p>Everything included, billed once a year.</p><span class="check">✓ Adjustable pipeline and unlimited jobs</span><span class="check">✓ All notes, referrals and follow-up tools</span><span class="check">✓ About 10% less than paying monthly</span><a class="button primary" href="#download">Start free trial</a></article>
         </div>
       </div>
     </section>
     <section class="final" id="download">
-      <div class="wrap"><div class="final-logo"><img src="assets/job-wizard-logo.png" alt=""></div><h2>Take control of every job.</h2><p>Start your 30-day free trial of Job Wizard Pro. The app is currently in closed testing and will be available publicly on Google Play when production access is approved.</p><a class="button" href="https://play.google.com/store/apps/details?id=com.alwynkotze.jobflow" rel="noopener">Google Play — Coming Soon</a></div>
+      <div class="wrap"><div class="final-logo"><img src="assets/job-wizard-logo.png" alt=""></div><h2>Whatever you book. Whoever you invoice. Job Wizard keeps it straight.</h2><p>Available on Android and built in South Africa. The app is currently in closed testing, with the public Google Play listing coming soon.</p><a class="button" href="https://play.google.com/store/apps/details?id=com.alwynkotze.jobflow" rel="noopener">Google Play — Coming Soon</a></div>
     </section>
   </main>
   <footer><div class="wrap footer-inner"><div>© 2026 Job Wizard. All rights reserved.</div><div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="delete-account.html">Delete Account</a></div></div></footer>
